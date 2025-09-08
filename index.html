@@ -31,11 +31,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-green-700 shadow-sm text-white">
-      <div class="navbar max-w-10/12 mx-auto">
+    <nav class="bg-green-800 shadow-sm text-white">
+      <div class="navbar md:max-w-10/12 mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost mr-2 md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -55,23 +55,23 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-green-700 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a>About</a></li>
-              <li><a>Gallery</a></li>
-              <li><a>Plant a Tree</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#plant-tree">Plant a Tree</a></li>
             </ul>
           </div>
           <a class="text-xl">Green Earth</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>About</a></li>
-            <li><a>Gallery</a></li>
-            <li><a>Plant a Tree</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#plant-tree">Plant a Tree</a></li>
           </ul>
         </div>
         <div class="navbar-end">
           <a
-            class="btn bg-yellow-300 text-green-700 border-none shadow-none rounded-4xl"
+            class="btn bg-yellow-400 text-green-800 mr-5 md:mr-0 border-none shadow-none rounded-4xl"
             >Plant a Tree</a
           >
         </div>
@@ -79,17 +79,17 @@
     </nav>
     <main>
       <!-- Hero-Section -->
-      <section class="hero bg-cover min-h-[350px]">
+      <section class="hero bg-cover min-h-[350px] md:text-center md:px-0 px-10">
         <div class=""></div>
-        <div class="hero-content text-center">
+        <div class="hero-content">
           <div class="">
-            <h1 class="mb-5 text-5xl font-bold">Plant a Tree, Grow a Future</h1>
-            <p class="mb-5">
+            <h1 class="mb-5 text-5xl font-bold text-left">Plant a Tree, Grow a Future</h1>
+            <p class="mb-5 text-justify">
               Join our mission to plant 1 million trees and make the Earth
-              greener for future<br />generations.
+              greener for future<br class="hidden md:"/>generations.
             </p>
             <button
-              class="btn bg-yellow-300 text-green-700 border-none shadow-none rounded-4xl"
+              class="btn bg-yellow-400 text-green-800 border-none shadow-none rounded-4xl"
             >
               Get Involved
             </button>
@@ -98,34 +98,102 @@
       </section>
 
       <!-- About Section -->
-      <section class="bg-green-100 py-28">
-        <div class="about w-10/12 mx-auto ">
-          <h2 class="about-title text-2xl text-center font-bold  pb-10">About the Campaign</h2>
+      <section id="about" class="bg-green-50 py-28">
+        <div class="about w-10/12 mx-auto">
+          <h2 class="about-title text-2xl text-center font-bold pb-10">
+            About the Campaign
+          </h2>
 
-          <div class="about-body w-8/12 mx-auto grid grid-cols-2 gap-7 items-center">
+          <div
+            class="about-body w-8/12 mx-auto grid md:grid-cols-2 gap-7 items-center"
+          >
             <figure>
-            <img
-              src="./assets/about.png"
-              alt="about img"
-            />
-          </figure>
-          <div class="about-description">
-            <p class="mb-5">
-              Green Earth is a global tree plantation initiative dedicated to
-              fighting climate change. Since our start, we’ve planted over
-              500,000 trees worldwide. By joining our campaign, you help restore
-              forests, create habitats for wildlife, and combat global warming.
-            </p>
-            <ul class="list-disc pl-5">
-              <li>Restoration of natural habitats</li>
-              <li>Improvement of air quality</li>
-              <li>Support for local communities</li>
-            </ul>
+              <img src="./assets/about.png" alt="about img" class="shadow-md shadow-slate-200 rounded-lg" />
+            </figure>
+            <div class="about-description">
+              <p class="mb-5">
+                Green Earth is a global tree plantation initiative dedicated to
+                fighting climate change. Since our start, we’ve planted over
+                500,000 trees worldwide. By joining our campaign, you help
+                restore forests, create habitats for wildlife, and combat global
+                warming.
+              </p>
+              <ul class="list-disc pl-5">
+                <li>Restoration of natural habitats</li>
+                <li>Improvement of air quality</li>
+                <li>Support for local communities</li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Impact Section -->
+      <section class="bg-emerald-100 py-28">
+        <div class="about w-10/12 mx-auto">
+          <h2 class="about-title text-2xl text-center font-bold pb-10">
+            Our Impact
+          </h2>
+          <div class="about-body mx-auto grid grid-cols-3 gap-12 items-center">
+            <!-- Card 1 -->
+            <div class="card card-border bg-base-100 shadow-sm">
+              <div class="card-body flex flex-col items-center">
+                <h2 class="card-title text-green-800 font-semibold">500K+</h2>
+                <p>Trees Planted</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card card-border bg-base-100 shadow-sm">
+              <div class="card-body flex flex-col items-center">
+                <h2 class="card-title text-green-800 font-semibold">500K+</h2>
+                <p>Trees Planted</p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card card-border bg-base-100 shadow-sm">
+              <div class="card-body flex flex-col items-center">
+                <h2 class="card-title text-green-800 font-semibold">500K+</h2>
+                <p>Trees Planted</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Plant Today Section -->
+      <section id="plant-tree" class="bg-green-800 py-28">
+        <div class="about w-10/12 mx-auto">
+          <h2 class="about-title text-2xl text-center text-white font-bold pb-10">
+            Plant a Tree Today
+          </h2>
+          <div
+            class="about-body md:w-5/12 mx-auto"
+          >
+            <fieldset
+              class="fieldset w-full bg-green-700 border-base-300 rounded-box shadow-md px-4 py-7"
+            >
+              <input type="text" class="input w-full" placeholder="Your Name" />
+
+              <input type="email" class="input w-full" placeholder="Your Email Address" />
+            
+              <select class="select w-full">
+                <option disabled selected>Number of Trees</option>
+                <option>1 Tree</option>
+                <option>2 Trees</option>
+                <option>3 Trees</option>
+              </select>
+
+              <button class="btn bg-yellow-400 text-green-700 border-none shadow-none rounded-4xl mt-4">Donate Now</button>
+            </fieldset>
           </div>
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer class="footer sm:footer-horizontal footer-center bg-green-900 text-white text-base-content p-4">
+  <aside>
+    <p>© 2025 Green Earth. All Rights Reserved.</p>
+  </aside>
+</footer>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
