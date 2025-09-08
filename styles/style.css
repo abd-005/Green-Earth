@@ -1,3 +1,10 @@
 *{
     font-family: "Inter", sans-serif;
 }
+.hero{
+    background-image: url(../assets/hero-leaf1.png), url(../assets/hero-leaf2.png);
+    background-position: left bottom, right bottom;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-color:#CFF0DC;
+}
