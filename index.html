@@ -89,18 +89,18 @@
         <div class=""></div>
         <div class="hero-content">
           <div class="">
-            <h1 class="mb-5 text-5xl font-bold text-left">
+            <h1 class="mb-5 text-4xl md:text-5xl font-bold text-left">
               Plant a Tree, Grow a Future
             </h1>
-            <p class="mb-5 text-justify">
+            <p class="mb-5 text-left md:text-center">
               Join our mission to plant 1 million trees and make the Earth
-              greener for future<br class="hidden md:" />generations.
+              greener for future <br class="hidden md:block"/>generations.
             </p>
-            <button
+            <a href="#plant-tree"><button
               class="btn bg-yellow-400 text-green-800 border-none shadow-none rounded-4xl"
             >
               Get Involved
-            </button>
+            </button></a>
           </div>
         </div>
       </section>
@@ -110,6 +110,7 @@
           Choose Your Trees
         </h2>
         <div class="choose-tree w-10/12 mx-auto grid grid-cols-3 md:grid-cols-5 gap-3">
+          
           <aside class="col-span-3 md:col-span-1">
             <h2 class="text-xl font-bold">Categories</h2>
             
@@ -118,6 +119,8 @@
             <span class="loading loading-spinner loading-sm"></span></p>
             </ul>
           </aside>
+
+
           <section id="card-container" class="grid grid-cols-1 col-span-2 md:grid-cols-3 md:col-span-3 gap-3">
             <p class="text-slate-500 text-md pt-5">Loading PLant Trees
             <span class="loading loading-spinner loading-md"></span></p>  
@@ -125,7 +128,7 @@
 
 
           <aside class=" bg-white rounded-lg">
-          <div id="cart-body" class="bg-white p-5 rounded">
+          <div id="cart-body" class="bg-white p-3 md:p-5 rounded-lg">
             <h2 class="font-bold mb-5">Your Cart</h2>
             <div class="space-y-5 border-b-1 border-slate-200 mb-3 pb-3" id="cart-container">
               
@@ -149,7 +152,7 @@
           </h2>
 
           <div
-            class="about-body w-8/12 mx-auto grid md:grid-cols-2 gap-7 items-center"
+            class="about-body md:w-8/12 mx-auto grid md:grid-cols-2 gap-7 items-center"
           >
             <figure>
               <img

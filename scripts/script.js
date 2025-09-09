@@ -182,7 +182,7 @@ const showCarts = (carts) => {
 
     // console.log("cart: ",price)
     cartContainer.innerHTML += `
-    <div class="bg-gray-200 rounded-xl flex flex-col-reverse md:flex-row justify-between items-center p-4">
+    <div class="bg-green-50 rounded-xl flex flex-col-reverse md:flex-row justify-between items-center p-4">
                   <div class="">
                     <h2 id="" class="font-semibold md:font-bold">${cart.title}</h2>
                     <p class="text-gray-500 text-xs md:text-base">৳<span>${price}</span> x <span id="cartCount">${count}</span></p>
