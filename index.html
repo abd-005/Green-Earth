@@ -60,7 +60,7 @@
               class="menu menu-sm dropdown-content bg-green-700 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li><a href="#about">About</a></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="#plants">Gallery</a></li>
               <li><a href="#plant-tree">Plant a Tree</a></li>
             </ul>
           </div>
@@ -69,12 +69,12 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a href="#about">About</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#plants">Gallery</a></li>
             <li><a href="#plant-tree">Plant a Tree</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a
+          <a href="#plant-tree"
             class="btn bg-yellow-400 text-green-800 mr-5 md:mr-0 border-none shadow-none rounded-4xl"
             >Plant a Tree</a
           >
@@ -105,7 +105,7 @@
         </div>
       </section>
       <!-- Choose Trees Section -->
-      <section class="choose-tree bg-green-50 py-28">
+      <section id="plants" class="choose-tree bg-green-50 py-28">
         <h2 class="choose-tree-title text-2xl text-center font-bold pb-10">
           Choose Your Trees
         </h2>
@@ -130,7 +130,7 @@
             <div class="space-y-5 border-b-1 border-slate-200 mb-3 pb-3" id="cart-container">
               
             </div>
-            <div id="cart-total" class="flex justify-between items-center text-xs">
+            <div id="cart-total" class="flex justify-between items-center text-xs md:text-base">
               <h2>Total:</h2>
               <p>৳ <span id="total-price">0</span></p>
             </div>
@@ -159,7 +159,7 @@
               />
             </figure>
             <div class="about-description">
-              <p class="mb-5">
+              <p class="mb-5 text-justify md:text-left">
                 Green Earth is a global tree plantation initiative dedicated to
                 fighting climate change. Since our start, we’ve planted over
                 500,000 trees worldwide. By joining our campaign, you help
@@ -182,26 +182,26 @@
           <h2 class="impact-title text-2xl text-center font-bold pb-10">
             Our Impact
           </h2>
-          <div class="impact-body mx-auto grid grid-cols-3 gap-12 items-center">
+          <div class="impact-body mx-auto grid grid-cols-3 gap-3 md:gap-12 items-center">
             <!-- Card 1 -->
             <div class="card card-border bg-base-100 shadow-sm">
               <div class="card-body flex flex-col items-center">
                 <h2 class="card-title text-green-800 font-semibold">500K+</h2>
-                <p>Trees Planted</p>
+                <p class="text-center md:text-left">Trees Planted</p>
               </div>
             </div>
             <!-- Card 2 -->
             <div class="card card-border bg-base-100 shadow-sm">
               <div class="card-body flex flex-col items-center">
                 <h2 class="card-title text-green-800 font-semibold">120+</h2>
-                <p>Communities Involved</p>
+                <p class="text-center md:text-left">Communities Involved</p>
               </div>
             </div>
             <!-- Card 3 -->
             <div class="card card-border bg-base-100 shadow-sm">
               <div class="card-body flex flex-col items-center">
                 <h2 class="card-title text-green-800 font-semibold">30+</h2>
-                <p>Countries Reached</p>
+                <p class="text-center md:text-left">Countries Reached</p>
               </div>
             </div>
           </div>
