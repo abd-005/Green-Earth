@@ -86,14 +86,52 @@ https://openapi.programming-hero.com/api/plant/1
 
 
 #### 1) What is the difference between var, let, and const?
+### Var:
+It's function and global scope, hoisted. It can be redeclared and reassigned
+
+### Let:
+It's block scope, hoisted but not initialized. It can't be redeclared but reassigned
+
+### Const:
+It's block scope, hoisted but not initialized. It can't be redeclared and reassigned
+
+2) Category Click → Tree Data 
+On clicking a category: load trees of that category.
+
 
 #### 2) What is the difference between map(), forEach(), and filter()? 
 
+### map():
+It Transforms each elemnet in an array and returns a new array
+
+### forEach():
+It executes a new function for each element without creating a new array
+
+### filter():
+It creates a new array with the elements meeting the requirements
+
 #### 3) What are arrow functions in ES6?
+
+A shorter way to declare a function. for example: **const add = (a, b) => a + b;** there's no need use return function in single line.
+
 
 #### 4) How does destructuring assignment work in ES6?
 
+By accessing the **values of an array** or the **properties of an object** with **a variable**
+
 #### 5) Explain template literals in ES6. How are they different from string concatenation?
+
+### template literals:
+It can embed variables, expressions within a string. I can create a  string with multiple lines without any extra tags or escaping from the string. Any valid javaScript can be in the string. for example:  
+const name = "Fardin";
+const message = `Congrats, ${name}! You walked 10 km.
+You Unlocked a new Level.`;
+
+But if we want to write it using traditional string contac. It would like:
+const name = "Fardin";
+const message = "Congrats, + " " + name + " " + "You walked 10 km.\n" + "You unlocked a new level.";
+
+Template literals in ES6 made our lives easy.
 
 ## ⚙️ Functionalities 
 
