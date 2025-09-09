@@ -125,7 +125,6 @@ By accessing the **values of an array** or the **properties of an object** with 
 It can embed variables, expressions within a string. I can create a  string with multiple lines without any extra tags or escaping from the string. Any valid javaScript can be in the string. for example:  
 const name = "Fardin";
 const message = \`Congrats, \${name}! You walked 10 km.
-
 You unlocked a new level.\`
 
 But if we want to write it using traditional string contac. It would like:
