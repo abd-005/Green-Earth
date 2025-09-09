@@ -32,7 +32,7 @@
   <body>
     <!-- Navbar -->
     <nav class="bg-green-800 shadow-sm text-white">
-      <div class="navbar md:max-w-11/12 mx-auto">
+      <div class="navbar md:max-w-10/12 mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <div
@@ -64,7 +64,7 @@
               <li><a href="#plant-tree">Plant a Tree</a></li>
             </ul>
           </div>
-          <a class="text-xl">Green Earth</a>
+          <a class="text-xl font-semibold">Green Earth</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -80,7 +80,8 @@
           >
         </div>
       </div>
-    </nav>
+    </nav>  
+  
     <!-- Main -->
     <main>
       <!-- Hero-Section -->
@@ -108,144 +109,31 @@
         <h2 class="choose-tree-title text-2xl text-center font-bold pb-10">
           Choose Your Trees
         </h2>
-        <div class="choose-tree w-11/12 mx-auto flex gap-7">
-          <aside class="w-2/12">
+        <div class="choose-tree w-10/12 mx-auto grid grid-cols-3 md:grid-cols-5 gap-3">
+          <aside class="col-span-3 md:col-span-1">
             <h2 class="text-xl font-bold">Categories</h2>
-            <ul id="category-container" class="rounded-box">
-              
+            
+            <ul id="category-container" class="rounded-box">     
+                <p class="text-slate-500 text-sm pt-5">Loading Categories
+            <span class="loading loading-spinner loading-sm"></span></p>
             </ul>
           </aside>
-          <section class="w-8/12 grid grid-cols-3 gap-7">
-            <!-- card1 -->
-            <div class="card bg-base-100 shadow-sm">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Card Title
-                  <div class="badge badge-secondary">NEW</div>
-                </h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div>
-                  <div class="badge badge-outline">Products</div>
-                </div>
-              </div>
-            </div>
-            <!-- card1 -->
-            <div class="card bg-base-100 shadow-sm">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Card Title
-                  <div class="badge badge-secondary">NEW</div>
-                </h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div>
-                  <div class="badge badge-outline">Products</div>
-                </div>
-              </div>
-            </div>
-            <!-- card1 -->
-            <div class="card bg-base-100 shadow-sm">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Card Title
-                  <div class="badge badge-secondary">NEW</div>
-                </h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div>
-                  <div class="badge badge-outline">Products</div>
-                </div>
-              </div>
-            </div>
-            <!-- card1 -->
-            <div class="card bg-base-100 shadow-sm">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Card Title
-                  <div class="badge badge-secondary">NEW</div>
-                </h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div>
-                  <div class="badge badge-outline">Products</div>
-                </div>
-              </div>
-            </div>
-            <!-- card1 -->
-            <div class="card bg-base-100 shadow-sm">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">
-                  Card Title
-                  <div class="badge badge-secondary">NEW</div>
-                </h2>
-                <p>
-                  A card component has a figure, a body part, and inside body
-                  there are title and actions parts
-                </p>
-                <div class="card-actions justify-end">
-                  <div class="badge badge-outline">Fashion</div>
-                  <div class="badge badge-outline">Products</div>
-                </div>
-              </div>
-            </div>
+          <section id="card-container" class="grid grid-cols-1 col-span-2 md:grid-cols-3 md:col-span-3 gap-3">
+            <p class="text-slate-500 text-md pt-5">Loading PLant Trees
+            <span class="loading loading-spinner loading-md"></span></p>  
           </section>
-          <aside class="w-2/12 bg-white">
-          <div class="bg-white p-5 rounded">
+
+
+          <aside class=" bg-white rounded-lg">
+          <div id="cart-body" class="bg-white p-5 rounded">
             <h2 class="font-bold mb-5">Your Cart</h2>
-            <div class="space-y-5" id="cart-container">
-              <div class="bg-gray-200 rounded-xl flex justify-between items-center p-4">
-                  <div class="">
-                    <h2 id="" class="font-bold">Mango Tree</h2>
-                    <p class="text-gray-500">৳500 x 1</p>
-                  </div>
-                  <i class="fa-solid fa-xmark text-sm text-gray-500"></i>
-                </div>
+            <div class="space-y-5 border-b-1 border-slate-200 mb-3 pb-3" id="cart-container">
+              
             </div>
-            <h2>Total:</h2>
-            <p>৳ <span id="total-price">0</span></p>
+            <div id="cart-total" class="flex justify-between items-center">
+              <h2>Total:</h2>
+              <p>৳ <span id="total-price">0</span></p>
+            </div>
           </div>
             </div>
             </div>
@@ -255,7 +143,7 @@
       </section>
       <!-- About Section -->
       <section id="about" class="bg-green-50 py-28">
-        <div class="about w-11/12 mx-auto">
+        <div class="about w-10/12 mx-auto">
           <h2 class="about-title text-2xl text-center font-bold pb-10">
             About the Campaign
           </h2>
@@ -290,7 +178,7 @@
 
       <!-- Impact Section -->
       <section class="bg-emerald-100 py-28">
-        <div class="impact w-11/12 mx-auto">
+        <div class="impact w-10/12 mx-auto">
           <h2 class="impact-title text-2xl text-center font-bold pb-10">
             Our Impact
           </h2>
@@ -321,7 +209,7 @@
       </section>
       <!-- Plant Today Section -->
       <section id="plant-tree" class="bg-green-800 py-28">
-        <div class="plant-trees w-11/12 mx-auto">
+        <div class="plant-trees w-10/12 mx-auto">
           <h2
             class="plant-trees text-2xl text-center text-white font-bold pb-10"
           >
@@ -364,6 +252,24 @@
         <p>© 2025 Green Earth. All Rights Reserved.</p>
       </aside>
     </footer>
+    <!-- Modal -->
+    <dialog id="modal-body" class="modal">
+      <div class="modal-box">
+        <div id="modal-container">
+          
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+                  class="btn bg-red-500 text-white border-none shadow-none rounded-4xl"
+                >
+                  Close
+                </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
